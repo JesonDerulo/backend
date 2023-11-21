@@ -7,7 +7,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    image = models.TextField(null=True, blank=True)
+    image = models.ImageField(null=True, blank=True, upload_to='product_image/')
     stock_quantity = models.PositiveIntegerField(default=0)
 
 
