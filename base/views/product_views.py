@@ -27,3 +27,4 @@ def product_details(request, pk):
             {"message": "Product does not exist"},
             status=status.HTTP_404_NOT_FOUND,
         )
+
